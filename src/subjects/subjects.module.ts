@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { SubjectsModule } from './subjects/subjects.module';
 
-@Module({})
+@Module({
+  imports: [SubjectsModule]
+})
 export class SubjectsModule {}

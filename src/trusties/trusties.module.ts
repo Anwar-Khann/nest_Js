@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { TrustiesModule } from './trusties/trusties.module';
 
-@Module({})
+@Module({
+  imports: [TrustiesModule]
+})
 export class TrustiesModule {}
