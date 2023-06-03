@@ -1,7 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AffiliationsModule } from './affiliations/affiliations.module';
+import { AffiliationsService } from './affiliations.service';
+import { AffiliationsController } from './affiliations.controller';
 
 @Module({
-  imports: [AffiliationsModule]
+  controllers: [AffiliationsController],
+  providers: [AffiliationsService]
 })
 export class AffiliationsModule {}
